@@ -1,0 +1,2 @@
+# uiautomatorTest
+uiautomator testcase
