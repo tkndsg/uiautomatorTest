@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tkndsg.tuoji.MainActivity">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_xcurrency" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="执行次数："/>
+        <EditText
+            android:id="@+id/et_times"
+            android:text="120"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:hint="240次约耗时1Min"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="runMonkey"
+            android:textAllCaps="false"
+            android:onClick="runMonkey"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="clearApp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="clearApp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:onClick="runAutoTest"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="runAutoTest"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:onClick="outputLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="outputLog"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_read"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_qtt"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="QTT"/>
+
+            <RadioButton
+                android:id="@+id/rb_kkd"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="KKD"/>
+        </RadioGroup>
+
+        <Button
+            android:onClick="GetReadCoin"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="GetReadCoin"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:onClick="GetTBCoin"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="GetTBCoin"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>
